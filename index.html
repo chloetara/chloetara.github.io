@@ -1,123 +1,257 @@
-
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
+<title>Bootstrap Example</title>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>El mundo de Chloe Tara</title>
-<link rel="icon" href="favicon4.png" type="image/x-icon">
-<link href="css_par1_git.css" rel="stylesheet">
-<script type="text/javascript">
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
-  } else {
-    document.getElementById("myBtn").style.display = "none";
-  }
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.modal-body {
+	display:flex;
+	padding:0;
 }
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+.mybtn {
+	width: calc(50% - 20px);
+	float: left;
+	display: inline-block;
+	background: #e42022;
+	color: #FFF;
+	text-align: center;
+	padding: 5px;
+	box-sizing: border-box;
+	margin: 10px;
+	font-weight: bold;
 }
-</script>
-
+.modal-footer {
+	padding:0;
+}
+.mybtn:hover {
+	opacity: 0.9;
+}
+.join {
+	background: #1b1464;
+}
+.right3 ul {
+	padding: 0px;
+	margin: 0px;
+}
+.right3 ul li {
+	background-image: url('https://s33.postimg.cc/502ku2hsv/correct_sign.png');
+	list-style: none;
+	padding-left:30px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 15px;
+	font-size:15px;
+}
+.code {
+	color:#23B14D;
+	font-weight:700;
+}
+.left3 {
+	width:40%;
+	padding:0 10px 0 0;
+	box-sizing:border-box;
+	min-height:2px;
+}
+.right3 {
+	width: 60%;
+	padding: 0px;
+	box-sizing: border-box;
+	min-height: 278px;
+}
+.left3 img {
+	width:100%;
+	margin-top:0px;
+}
+.left3 {
+	background:url('https://s33.postimg.cc/d5kms1ya7/player1.png') no-repeat center top / auto 100%;
+}
+.right3 p {
+	margin:0;
+	font-weight:bold;
+}
+.preventclose {
+	position:fixed;
+	top:0;
+	width:100%;
+	height:5px;
+}
+.left4 {
+	width: 100%;
+	float: left;
+	padding:0px;
+	box-sizing: border-box;
+}
+.bbtitle {
+	font-family: 'Poppins', sans-serif;
+	color: #1b1464;
+	display: block;
+	font-weight: bold;
+	text-transform: capitalize;
+	font-size: 26px;
+	padding: 10px 10px 10px 0;
+}
+.right4 {
+	width: 100%;
+	float: left;
+	color:#FFF;
+	padding:0 10px;
+	box-sizing: border-box;
+}
+.firstlink {
+	display: block;
+	padding: 13px 10px 10px;
+	background: none;
+}
+.endtext {
+	padding: 10px;
+	font-size: 13px;
+	color: #999;
+	font-weight: bold;
+	margin-top: 21px !important;
+	display: block;
+	float: left;
+}
+.dollar25 {
+	color:red;
+	font-weight: bolder;
+}
+.right3 p {
+	padding:5px;
+	margin-top: 18px;
+	font-size:14px;
+	text-align: justify;
+}
+.ifl-image {
+	width: 80px !important;
+}
+/* Close Button */
+.popup-close {
+	width:30px;
+	height:30px;
+	padding:4px 2px 0px;
+	display:inline-block;
+	position:absolute;
+	top:0px;
+	right:0px;
+	transition:ease 0.25s all;
+	-webkit-transform:translate(50%, -50%);
+	transform:translate(50%, -50%);
+	border-radius:1000px;
+	background:#1b1464;
+	font-family:Arial, Sans-Serif;
+	font-size:20px;
+	text-align:center;
+	line-height:100%;
+	color:#FFF !important;
+}
+.popup-close:hover {
+	-webkit-transform:translate(50%, -50%) rotate(180deg);
+	transform:translate(50%, -50%) rotate(180deg);
+	background:red;
+	text-decoration:none;
+}
+ @media(max-width:767px) {
+.left3 {
+	width:30%;
+}
+.right3 {
+	width:70%;
+}
+.left3 img {
+	width: 100%;
+	margin-top: 18px;
+}
+}
+@media(max-width:550px) {
+.bbtitle {
+	text-align: center;
+	font-size: 22px;
+}
+.left3 {
+	height:200px;
+	background-size:cover;
+	background-position:center top;
+}
+.right3 {
+	width:100%;
+}
+.off {
+	font-size:60px;
+}
+.left3 img {
+	width: 200px;
+	margin-top: 18px;
+}
+}
+@media(max-width:450px) {
+.bbtitle {
+	text-align: center;
+	font-size: 18px;
+}
+.left3 {
+	height:200px;
+	background-size:cover;
+	background-position:center top;
+}
+.right3 {
+	width: 90%;
+}
+.off {
+	font-size:60px;
+}
+.left3 img {
+	width: 200px;
+	margin-top: 160px;
+}
+.right3 ul li {
+	font-size:13px;
+}
+.right3 p {
+	font-weight:bold;
+	font-size: 11px;
+	text-align: justify;
+}
+}
+</style>
 </head>
 <body>
-
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-
-<div class="bgimg-1">
-  <div class="caption">
-    <header>
-    <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li> <a href="#anything1">Part #1</a></li>
-          <li> <a href="#anything2">Part #2</a></li>
-          <li> <a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="first_words">
-
+<div class="container">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content" style="border:5px solid red;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">International Football League</h5>
+        </div>
+        <div class="modal-body">
+          <div class="left3"><img src="http://intfl.com/themes/front//images/logo1.png" class="ifl-image"></div>
+          <div class="right3">
+            <ul>
+              <li>Want to win $100K?</li>
+              <li>Want to win ownership of the IFL?</li>
+              <li>Want to help pick team names?</li>
+              <li>Want to help pick team logos?</li>
+              <li>Want to help pick players for teams</li>
+              <li>Want to help hire staff?</li>
+              <li>Want to help fire staff?</li>
+            </ul>
+            <div class="buttons123"><a href="#" class="join mybtn">Join</a><a href="#" class="notnow mybtn">Not Now</a></div>
+            <p>Well there's no need to want anymore here's your chance. Just become a member of the International Football League for just<i class="dollar25">$25</i>to help call the shots.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary popup-close " data-dismiss="modal">X</button>
+        </div>
+      </div>
     </div>
-
   </div>
 </div>
 
-<div id="about" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">HELLO THERE</h3>
-    <p> Welcome to my own page. My name is Chloe Golovleva and I considered to using this space for my own training in web-development. In first, I want to realize to some features: parallax scrolling, “back-to-top” button, navigation panel and others. Pictures used on this page that were found by me at different times and on different pages of the Internet. If you have the right to any of them, you can show me the proof that you are the owner and I will remove this picture(s).
-And yes – work in progress!
-    </p>
-  <?php
-    echo "<p>Time of the server (at least, it supposed to be)".date('H:i, jS F Y')."</p>";
-  ?>
-</div>
-
-
-
-<div class="bgimg-2" id="anything1">
-  <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">
-      Here should be some heading and/or some text
-    </span>
-
-  </div>
-</div>
-
-
-<div style="position:relative;" id="anything2">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-
-    <section class="about" id="about">
-      <h2 class="heading_column">Simple separated columns floating</h2>
-      <article class="text_column">
-        <h4>Heading for First Column</h4>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </article>
-      <article class="text_column">
-        <h4>Heading for Second Column</h4>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </article>
-      <article class="text_column">
-        <h4>Heading for Third Column</h4>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </article>
-    </section>
-
-    <div class="column">
-      <h2 class="heading_column">Simple solid "newspaper's" columns</h2>
-        <article class="paragraph_column">
-          <h4><a href="https://www.w3.org/TR/2017/REC-html52-20171214/introduction.html#audience" target="_blank" title="non-normative section from HTML 5.2's W3C Recommendation">Audience</a></h4>
-          This specification is intended for authors of documents and scripts that use the features defined in this specification, implementors of tools that operate on pages that use the features defined in this specification, and individuals wishing to establish the correctness of documents or implementations with respect to the requirements of this specification.</br>
-    This document is probably not suited to readers who do not already have at least a passing familiarity with Web technologies, as in places it sacrifices clarity for precision, and brevity for completeness. More approachable tutorials and authoring guides can provide a gentler introduction to the topic.</br>
-    In particular, familiarity with the basics of DOM is necessary for a complete understanding of some of the more technical parts of this specification. An understanding of Web IDL, HTTP, XML, Unicode, character encodings, JavaScript, and CSS will also be helpful in places but is not essential.</br>
-    </article>
-    </div>
-
-
-  </div>
-</div>
-
-<div class="bgimg-3">
-  <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Would you like sweet oranges?</span>
-  </div>
-</div>
-
-
-<div id="contact">
-  <!-- in div above: style="position:relative;" -->
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:10px 30px;text-align: justify;">
-  <article class="footer">You can always write to me and ask anything: chloinwrite@gmail.com</article>
-  <footer class="footer_copy">
-    &copy; 2019 Designed by Chloe Golovleva. All rights reserved.
-  </footer>
-  </div>
-</div>
-
+<script type="text/javascript">
+   $('#myModal').modal('show');
+</script>
 </body>
 </html>
