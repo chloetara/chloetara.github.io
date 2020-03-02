@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv = "refresh" content = "">
+<meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+<link href="icon_masks.png" rel="icon" type ="image/png">
+<link href="main_page_style.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+jQuery(document).ready(function() {
+  var offset = 100;//this value was '300
+    var duration = 1000; //this value was '1250' or even '1300'
+		jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery('.back-to-top').fadeIn(duration);
+            } else {
+                jQuery('.back-to-top').fadeOut(duration);
+                }
+        });
+		jQuery('.back-to-top').click(function(event) {
+		  event.preventDefault();
+			  jQuery('html, body').animate({scrollTop: 0}, duration);
+                return false;
+        })
+});
+    </script>
+<title>Chloe Golovleva</title>
+</head>
+<body>
+   
+
+   
+<div class="wrapper-main">
+
+    <nav class="nav-sticky">
+        <ul class="ul-nav-sticky">
+            <li class="li-first"><a class="link-nav-sticky" href="#">Home</a></li>
+            <li><a class="link-nav-sticky" href="#contacts">Contacts</a></li>
+            <li><a class="link-nav-sticky" href="#aboutme">About me</a></li>
+            <li><a class="link-nav-sticky" href="#mypoint">My point</a></li>
+            <li><a class="link-nav-sticky" href="#afterthoughts">P.S.</a></li>
+        </ul>
+    </nav>
+   
+    <header>
+        <nav class="nav-header"> 
+            <div class="my-name">Chloe Golovleva</div>
+        </nav>
+        
+        <div class="border-for-image">
+                <img class="image-nice" src="my_photo.jpg">
+        </div>
+    
+    </header>
+   
+    <div class="five-min-read"></div>
+   
+    <div class="text-section">
+
+        <article>
+            <h1>This is definitely my personal page</h1>
+
+            <p>My name is Chloe, and I’m looking for a job in web-development (for now, it's an entry level of front-end).</p>
+
+            <ul>I considered that a scope of usual CV do not fit at all for my case because of:
+                <li><span class="text-bold">first</span>, I haven’t an appropriate academic education and official (labor) experience in computer science, and this space makes more possible to explain about me and what I’m doing now in a better way than usual CV;</li>
+                <li><span class="text-bold">second</span>, here I can learn and practice with the web-development’s techniques and technologies by creating either small parts of the page – such as navigation menu, links, lists, forms, modal windows, etc. – as well as entire page engaging its parts together that can provide useful functionality and comfortable design. And I already do this.</li>
+            </ul>
+          
+            <details>
+                <summary><button>Ver Español</button></summary>
+                    <div class="spanish-text-container">
+                    
+                        <h1 class="spanish-text-heading">Obvio que esta es mi página personal</h1>
+
+                        <p class="spanish-text">Soy Cloe, y estoy buscando un trabajo en desarrollo web (por ahora es un nivel de entrada de front-end).</p>
+                    
+                        <ul class="spanish-text">Consideré que un ámbito de CV habitual no encaja en absoluto en mi caso debido a:
+                            <li><span class="text-bold">primero</span>, no tengo una educación académica apropiada y experiencia oficial (laboral) en informática, y este espacio hace más posible explicar sobre mí y lo que hago ahora de una manera mejor que el CV habitual;</li>
+                        
+                            <li><span class="text-bold">segundo</span>, aquí puedo aprender y practicar con las técnicas y tecnologías del desarrollo web creando pequeñas partes de la página - como el menú de navegación, enlaces, listas, formularios, ventanas modales, etc. - así como la página completa uniendo sus partes que pueden proporcionar una funcionalidad útil y diseño confortable (cómodo). Y ya lo hago.</li>
+                        </ul>
+                    </div>  
+    
+            </details>
+
+        </article>
+    
+        <article>
+            <h1 id="aboutme">A bit about me</h1>
+        
+            <p>I’m a former Russian lawyer/attorney with over 15 years experience. (Now you can see, anyway, I have an academic education!) It has been more than one year when I live in Buenos Aires (CABA), Argentina, since October 2018, by waiting for government’s decision about my refugee status. I started to seek an asylum in other country when after a long time suffering with violence and sexual abuse I got a real threat for my life in Russia as a transgender woman.</p>
+            <p>On December 2019 the Government of Argentina has recognized me as a political refugee (as a member of LGBT-community), and now I am in the procedure of doing the paperwork to obtain the DNI of Argentina.</p>
+            <p>I didn’t plan to move to another country, especially to such one with the language (Spanish) that I didn’t know at all, and having the profession with which I could work only in the origin country.</p>
+            <p>There were no any organization or person those invited and met me in Argentina.</p> 
+            <p>I just wanted to survive and live a life as a human and person, but not as an animal that is always attempting to flee from the threats of the humans hunting.</p>
+            <ul >Since I came in Argentina I got (and still get it) my little constant challenges – things that I never did before; and among others also:
+                <li><span class="text-bold">I started to learn Spanish from scratch</span>. There was one and a half months course of Spanish (as a starting point) and further I have learned and do it now by myself as well as I’m learning English. I think, for both of them it’s an ongoing process. Unfortunately, my Spanish still bad, but I can communicate with people, and to get my everyday affairs.</li>
+                <li><span class="text-bold">I started using the Linux OpenSUSE Leap 15</span> (immediately after Windows7) that was only one Linux distribution that can run on my old laptop – with idle video card and battery (honestly, after that it became more easily use LAMP-stack for <span class="text-italic"><em>“localhost”</em></span>).
+                <li><span class="text-bold"><b>I have stopped using Russian language at all</b></span> in the autumn of the past year (May or June). Now I read and write only in English, and sometime in Spanish. I’m speaking Spanish as much as I can; but do not have an opportunity to speak English.</li>
+                <li><span class="text-bold"><b>I created this page from scratch</b></span>. There was no existing an entire template in which I could only put my text. It’s obviously, that all techniques and technologies are already exist, and I learned about them and applied as I wanted to. </li>
+            </ul>
+           
+            <details>
+                    <summary><button>Ver Español</button></summary>
+                    
+                    <div class="spanish-text-container">
+                        <h1 class="spanish-text-heading">Un poco acerca de mí</h1>
+                        
+                        <p class="spanish-text">Soy una ex abogada de Rusia profesional con más de 15 años de experiencia (Ahora puedes ver que, de todos modos, ¡tengo una educación académica!). Hace más de un año que vivo en Buenos Aires (CABA), Argentina, desde Octubre de 2018, esperando la decisión del Gobierno sobre mi  estatus (condición) de refugiado. Comencé a buscar asilo en otro país cuando, después de mucho tiempo de sufriendo violencia y abuso sexual, recibí una amenaza real para mi vida en Rusia como mujer trans.</p>
+                        
+                        <p class="spanish-text">En diciembre de 2019 el Gobierno de la Argentina me ha reconocido como refugiado político (como miembro de la comunidad LGBT), y ahora estoy en el proceso de hacer los trámites para obtener el DNI de la Argentina.</p>
+                        
+                        <p class="spanish-text">No planeaba mudarme a otro país, especialmente a uno con el idioma (español) que no conocía en absoluto, y tenía la profesión con la que solo podía trabajar en el país de origen.</p>
+                        
+                        <p class="spanish-text">No hubo ninguna organización o persona que me invitó y me conoció en Argentina.</p>
+                        
+                        <p class="spanish-text">Sólo quería sobrevivir y vivir una vida como humana y persona, pero no como un animal que siempre está tratando de huir de las amenazas de la caza humana.</p>
+                        
+                        <ul class="spanish-text">Desde que llegué a Argentina tuve (y aún lo entiendo) mis pequeños desafíos constantes, cosas que nunca antes había hecho; y entre otros también:
+                            <li><span class="text-bold">Empecé a aprender español desde cero</span>. Había un curso de un mes y medio de español (como punto de partida) y más adelante he aprendido y lo hago ahora por mí mismo así como estoy aprendiendo inglés. Creo que para ambos es un proceso continuo. Desafortunadamente, mi español sigue siendo malo, pero puedo comunicarme con la gente, y conseguir mis asuntos cotidianos.</li>
+                            <li><span class="text-bold">Empecé a usar el Linux OpenSUSE Leap 15</span> (inmediatamente después de Windows7) que era sólo una distribución de Linux que puede funcionar en mi viejo portátil - con la tarjeta de vídeo y la batería que las no funcionan (honestamente, después de eso se volvió más fácil usar LAMP-stack para "localhost").</li>
+                            <li><span class="text-bold">He dejado de usar el idioma ruso en absoluto</span> en el otoño del año pasado (mayo o junio). Ahora leo y escribo sólo en inglés, y en algún momento en español. Hablo español tanto como puedo, pero no tengo la oportunidad de hablar inglés.</li>
+                            <li><span class="text-bold">He creado esta página desde cero</span>. No existía una plantilla completa en la que solo pudiera poner mi texto. Obviamente, todas las técnicas y tecnologías ya existen, pero las aprendí sobre ellas y las apliqué como quería.</li>
+                        </ul>
+                     </div>
+ 
+            </details>
+        
+        </article>
+
+        <article>
+            <h1 id="mypoint">What is my point?</h1>
+    
+            <p>I’m just creating my new profession by learning and practicing front-end technologies, including markup (HTML), representing (CSS) and scripting (JavaScript with its libraries).</p>
+            
+            <p>Turning back to formal education, the majority of my knowledge in a legal profession I got by myself (reading and analyzing a huge numbers of official documents and court cases, and then applying my conclusions and what I’ve learned in the real-life documents and suits/cases).</p>
+            
+            <p>And so I made this page – in first, to imagine and consider what I want to have / to see, etc; then to formulate the tasks according to my considerations; then to get searching, learning, practicing – how to make something what I want, and apply it.</p>
+            
+            <p>In the beginning and during the most time when I worked under this page till it was published I wanted to create or make a lot of features that might be done with nowadays web technologies, but it mostly prevented me to publish until I decided to make other parts after that.</p>
+
+            <p>Also I should been refuse from a several features, for instance, to create modal popup window using Bootstrap templates – <span>it crashed all my styling when I attempted to apply such a window that was firstly created in a separated file</span>; (b) also, have applying together different techniques from different sources caused really mess of whole page, and I had to rewrite the code (markup and stylesheets) of the page almost from scratch, so looking for errors too (for this reason the fact of creating this page was one of my achievements). Beside of that I applied my own features (techniques) that I considered. For example, to show-hide firstly hidden text with the <code>&lt;details&gt;</code>, <code>&lt;summary&gt;</code> and the <code>&lt;button&gt;</code> - in this case it's a translated to Spanish text.</p>
+            
+            <p>However, it’s obviously an ongoing process – to inspire of something or to take (to formulate) a task to do something, to learn about, and to practice, over and over again, and so on.</p>
+            
+            <p>This is an entire world called “Front-end Web Development”. In my view, programming at all is a very practical profession; of course, there are fundamental theories and ideas, but I do understand the matters.</p>
+
+            <details>
+                <summary><button>Ver Español</button></summary>
+                
+                <div class="spanish-text-container">
+                    <h1 class="spanish-text-heading">¿Qué quiero lograr?</h1>
+        
+                    <p class="spanish-text">
+                    Estoy creando mi nueva profesión aprendiendo y practicando tecnologías de front-end, que incluyen marcado (HTML), representación (CSS) y la programación (JavaScript con sus bibliotecas).
+                    </p>
+                    
+                    <p class="spanish-text">
+                    Volviendo a la educación formal, la mayoría de mis conocimientos en una profesión legal los obtuve por mí mismo (leyendo y analizando un gran número de documentos oficiales y casos judiciales, y luego aplicando mis conclusiones y lo que he aprendido en los documentos y demandas/casos de la vida real).
+                    </p>
+                    
+                    <p class="spanish-text">
+                    Y así hice esta página – primero, imaginar y considerar lo que quiero tener / ver, etc.; luego formular las tareas de acuerdo con mis consideraciones; luego buscar, aprender, practicar – cómo hacer que algo sea lo que quiero y aplicarlo.
+                    </p>
+                    
+                    <p class="spanish-text">
+                    Al principio y durante la mayor parte del tiempo en que trabajé en esta página hasta que se publicó, quería crear o crear muchas funciones que pudieran hacerse con las tecnologías web actuales, pero en su mayoría me impidió publicar hasta que decidí hacer otras partes después de eso.
+                    </p>
+                                      
+                    <p class="spanish-text">
+                    También debería ser rechazado de varias características, por ejemplo, / (a) crear una ventana  modal usando plantillas de Bootstrap - <span>se estrelló todo mi estilo cuando intenté aplicar tal ventana que fue creada en primer lugar en un archivo separado</span>; (b) además, el hecho de aplicar juntas diferentes técnicas de diferentes fuentes causó un gran desorden en toda la página, y tuve que reescribir el código (marcas y hojas de estilo) de la página casi desde cero, así que también busqué errores (por esta razón el hecho de crear esta página fue uno de mis logros). Además de eso, apliqué mis propias características (técnicas) que consideré. Por ejemplo, para mostrar-ocultar primero el texto oculto con los <code>&lt;details&gt;</code>, <code>&lt;summary&gt;</code> y el <code>&lt;button&gt;</code> - en este caso es un texto traducido al español.
+                    </p>
+                    
+                    <p class="spanish-text">
+                    Sin embargo, obviamente es un proceso continuo: inspirar algo o tomar (formular) una tarea para hacer algo, aprender y practicar, una y otra vez, y así sucesivamente.
+                    </p>
+                    
+                    <p class="spanish-text">
+                    Este es un mundo entero llamado "Desarrollo web front-end". En mi opinión, la programación es una profesión muy práctica; por supuesto, hay teorías e ideas fundamentales, pero entiendo los asuntos.            
+                    </p>                                  
+                </div>
+            </details>   
+       
+        </article>
+
+        
+        <article>
+            <h1 id="afterthoughts">Afterthoughts (P.S.)</h1>
+            
+            <p>The hardest part of the process of creating this page for publishing was to work with the text above – this is the first time when I’m speaking aloud and publicly about myself as a transgender woman and my life. But in our world it’s still makes sense, and that fact of my past better explains my life now, in spite of the difficulty I can get.</p>
+            <p><span class="text-bold">And one more</span>. In the beginning, I thought to list all the techniques and technologies I used to create this page in the point of its publishing, but I've changed my mind. This is useful, and you always can see the “Page Source” code on the all browsers or here, on the <a href="https://github.com/" target="_blank">Github</a>. Further, I’m going to improve partly this page (for example, to add the responsive layout for mobile devices) and create the new ones with other technologies and features.</p>
+       
+            <details>
+                <summary><button>Ver Español</button></summary>
+                
+                <div class="spanish-text-container">
+                    <h1 class="spanish-text-heading">Reflexiones posteriores (P.D.)</h1>
+        
+                    <p class="spanish-text">La parte más difícil del proceso para crear esta página para su publicación fue trabajar con el texto anterior: esta es la primera vez que hablo en voz alta y pública sobre mí misma como mujer trans y acerca mi vida. Pero en nuestro mundo todavía tiene sentido, y ese hecho de mi pasado explica mejor mi vida ahora, a pesar de la dificultad que puedo tener.</p>
+                    
+                    <p  class="spanish-text"><span class="text-bold">Y una más</span>. Al principio, pensé en enumerar todas las técnicas y tecnologías que utilicé para crear esta página en el punto de su publicación, pero cambié de opinión. Esto es útil, y siempre se puede ver el código "Page Source" ("Fuente de la página") en todos los navegadores o aquí, en el <a href="https://github.com/" target="_blank">Github</a>. Además, voy a mejorar en parte esta página (por ejemplo, para añadir el diseño receptivo para los dispositivos móviles) y crear las nuevas con otras tecnologías y características.</p>
+                    
+                </div>
+            </details>           
+
+          </article>
+
+
+
+    </div> 
+  
+
+     <footer>
+        <div class="footer-wrapper" id="contacts">Contacts:
+            <ul class="footer-ul-social-media"> 
+                <li><a href="https://soundcloud.com/chloetara" alt="soundloud.com - profile" target="_blank"><img src="icon_soundcloud.png" class="img-social-icon"></a></li>
+                <li><a href="https://www.facebook.com/chloe.golovleva" alt="facebook - profile" target="_blank"><img src="icon_facebook.png" class="img-social-icon"></a></li>
+                <li><a href="https://twitter.com/CGolovleva" alt="twitter - profile" target="_blank"><img src="icon_twitter.png" class="img-social-icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/chloe-golovleva/" alt="linkedin - profile" target="_blank"><img src="icon_linkedin.png" class="img-social-icon"></a></li>
+                <li><a href="mailto:chloinwrite@gmail.com" alt="write me email"><img src="icon_gmail.png" class="img-social-icon"></a></li>
+            </ul>
+            <div class="footer-copyright">Designed &amp; Created by &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> Chloe Golovleva. All rights reserved.
+            </div>
+            <div class="footer-note-for-icons">Anyway, textMe: chloinwrite@gmail.com
+            </div>
+        </div>
+    </footer>  
+     <div class="back-to-top">
+        <a href="#" alt="icon-up">
+            <img src="icon_up_im.png">
+        </a>
+     </div>
+
+</div>
+    
+ 
+   
+  
+    
+</body>
+</html> 
